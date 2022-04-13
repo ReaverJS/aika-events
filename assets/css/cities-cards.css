@@ -66,4 +66,11 @@
     background-color: var(--primary-color);
     border-radius: 100%;
     z-index: 1;
+
+    transition: width 1.5s, height 1.5s;
+}
+
+.cities-wrapper .city:hover::before {
+    width: 900px;
+    height: 900px;
 }
