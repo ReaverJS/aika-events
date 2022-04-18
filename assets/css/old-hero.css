@@ -74,6 +74,10 @@
     margin-bottom: 40px;
 }
 
+.hero .event-card {
+
+}
+
 
 @media (max-width: 767.98px) {
     .hero .container {
@@ -83,4 +87,72 @@
     .hero h2 {
         font-size: 46px;
     }
+}
+
+
+.hero .event-card {
+    max-width: 306.94px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 4px 4px 6px 0 rgba(0,0,0, .5);
+    overflow: hidden;
+}
+
+.hero .event-card .text-wrapper {
+    padding: 20px;
+    padding-right: 0;
+    z-index: 2;
+    color: var(--pseudo-black) !important;
+}
+
+.hero .event-card .text-wrapper h5 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.hero .event-card .text-wrapper p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.hero .event-card .text-wrapper p:last-of-type {
+    margin-bottom: 0px;
+}
+
+.hero .event-card .date-wrapper {
+    padding: 20px;
+    z-index: 2;
+    color: var(--pseudo-white);
+    text-align: center;
+}
+
+.hero .event-card .date-wrapper h5 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.hero .event-card .date-wrapper p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.hero .event-card::before {
+    content: '';
+    position: absolute;
+    right: -150px;
+    top: -150px;
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    z-index: 1;
+
+    transition: transform .6s;
 }
